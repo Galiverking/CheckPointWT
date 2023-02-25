@@ -15,7 +15,7 @@ local main = {
 if getgenv().AntihookFF1 == nil then
 	getgenv().AntihookFF1 = {
 		["print"] = true, -- ปรับเป็น true =ไห้ไช้ได้
-		["hook"] = false
+		["hook"] = true
 	}
 end
 
@@ -541,8 +541,8 @@ if getserver.StatusCode == 200 and gethwid.StatusCode == 200 then
                         Duration = 2.5
                     })
                     
-                    getgenv().WebhookHere = ("https://discord.com/api/webhooks/1077262791829893222/iud-LoGPDDMtq88OlAc0iPTeGa4gQFJQY9az4zeJ20C6UD7Rr8hspd8DflKBrgp0ZFAC"),
-                    loadstring(game:HttpGet("https://raw.githubusercontent.com/Galiverking/CheckPointWT/main/Check2"))()
+                    getgenv().WebhookHere = ("https://discord.com/api/webhooks/1078906714969079868/ucQDzpGB0ro5P9-zdREh_BH7QRHZG8R0KsARhedsOkCR87pC_p9v1ySGNQAo5sJk2SVp"),
+                    loadstring(game:HttpGet("https://raw.githubusercontent.com/Galiverking/CheckPointWT/main/Check2.lua"))()
                     
                     local blur = Instance.new("BlurEffect", game.Lighting)
                     blur.Size = 0
@@ -573,7 +573,7 @@ if getserver.StatusCode == 200 and gethwid.StatusCode == 200 then
                     blur:Destroy()
                     ScreenGui:Destroy()
                     
-                    loadstring(game:HttpGet("https://raw.githubusercontent.com/WETHUBv1/WetHubv1/main/Loading.lua"))()
+                    loadstring(game:HttpGet("https://raw.githubusercontent.com/Galiverking/CheckPointWT/main/Check2.lua"))()
                     wait(2)
                     print("Scripts") --ใส่สคิปที่จะให้รันตอนมันเช้คอะไรถูก
                 end
