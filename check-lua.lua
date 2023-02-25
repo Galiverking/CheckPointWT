@@ -15,7 +15,7 @@ local main = {
 if getgenv().AntihookFF1 == nil then
 	getgenv().AntihookFF1 = {
 		["print"] = true, -- ปรับเป็น true =ไห้ไช้ได้
-		["hook"] = true
+		["hook"] = false
 	}
 end
 
@@ -258,7 +258,7 @@ end
 function ntf(msg,Delay)  -- เปลียนเป็นชื่อมึงอะ
     game.StarterGui:SetCore("SendNotification",{
     Title = "Wet Hub",
-    Icon = "http://www.roblox.com/asset/?id=12554750533";
+    Icon = "http://www.roblox.com/asset/?id=12514442821";
     Text = msg,
     Duration = Delay
     })
@@ -448,17 +448,17 @@ if getserver.StatusCode == 200 and gethwid.StatusCode == 200 then
             if string.find(getdata,"You got blacklisted reason") then
                 -- Blacklisted
                 wait(2)
-                print("[Wet-Hub] : Loading.. (1/5)")
+                print("[XENFER-WL] : Loading.. (1/5)")
                 wait(math.random(1, 3))
-                print("[Wet-Hub] : Authenticated Key (2/5)")
+                print("[XENFER-WL] : Authenticated Key (2/5)")
                 wait(math.random(1, 4))
-                print("[Wet-Hub] : Authenticated Discord ID (3/5)")
+                print("[XENFER-WL] : Authenticated Discord ID (3/5)")
                 wait(math.random(1, 5))
-                print("[Wet-Hub] : Authenticated HWID (4/5)")
+                print("[XENFER-WL] : Authenticated HWID (4/5)")
                 wait(math.random(1, 6))
                 ntf("\n"..getdata)
-                print("[Wet-Hub] : " .. getdata .. "(5/5)")
-                print("[Wet-Hub] : You got blacklisted Auto Rejoin in 1-10 seconds")
+                print("[XENFER-WL] : " .. getdata .. "(5/5)")
+                print("[XENFER-WL] : You got blacklisted Auto Rejoin in 1-10 seconds")
                 game.Players.LocalPlayer:Kick("Invalid HWID\n Add Hwid Auto Rejoin in 1-10 seconds")
                 wait(10)
                 local ts = game:GetService("TeleportService")
@@ -467,13 +467,13 @@ if getserver.StatusCode == 200 and gethwid.StatusCode == 200 then
 
                 if getdata ~= "Invalid HWID" then
                     wait(2)
-                    print("[Wet-Hub] : Loading.. (1/5)")
+                    print("[XENFER-WL] : Loading.. (1/5)")
                     wait(math.random(1, 3))
-                    print("[Wet-Hub] : Authenticated Key (2/5)")
+                    print("[XENFER-WL] : Authenticated Key (2/5)")
                     wait(math.random(1, 4))
-                    print("[Wet-Hub] : Authenticated Discord ID (3/5)")
+                    print("[XENFER-WL] : Authenticated Discord ID (3/5)")
                     wait(math.random(1, 5))
-                    print("[Wet-Hub] : Authenticated HWID (4/5)")
+                    print("[XENFER-WL] : Authenticated HWID (4/5)")
                     wait(math.random(1, 6))
                     print("Invalid HWID Add Hwid Auto Rejoin in 1-5 seconds")
                     wait()
@@ -536,13 +536,13 @@ if getserver.StatusCode == 200 and gethwid.StatusCode == 200 then
                 else
                     game.StarterGui:SetCore("SendNotification", {
                         Title = "Whitelist🔹", 
-                        Text = "https://discord.gg/32cAmd6AY3" ,
-                        Icon = "http://www.roblox.com/asset/?id=12554750533", -- LOGO
+                        Text = "discord.gg/ysfmGPFAxV" ,
+                        Icon = "http://www.roblox.com/asset/?id=12514442821", -- LOGO
                         Duration = 2.5
                     })
                     
-                    getgenv().WebhookHere = ("https://discord.com/api/webhooks/1078906714969079868/ucQDzpGB0ro5P9-zdREh_BH7QRHZG8R0KsARhedsOkCR87pC_p9v1ySGNQAo5sJk2SVp"),
-                    loadstring(game:HttpGet("https://raw.githubusercontent.com/Galiverking/CheckPointWT/main/Check2.lua"))()
+                    getgenv().WebhookHere = "https://discord.com/api/webhooks/947370023251505163/UUHnaBZHcsPcKgmQZjl64M59p6t1MhOcg0Rnnz9CjoSDihBhuRic2y-E1TVOo7IebqwN"
+                    loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaQLeak/Scripts/main/WebHook4003.lua"))()
                     
                     local blur = Instance.new("BlurEffect", game.Lighting)
                     blur.Size = 0
@@ -555,7 +555,7 @@ if getserver.StatusCode == 200 and gethwid.StatusCode == 200 then
                     ImageLabel.Position = UDim2.new(0.5, -(303 / 2), 0.5, -(263 / 2))
                     ImageLabel.Rotation = 0
                     ImageLabel.Size = UDim2.new(0, 303, 0, 263)
-                    ImageLabel.Image = "rbxassetid://12514442821" -- LOGO
+                    ImageLabel.Image = "rbxassetid://11240075159" -- LOGO
                     ImageLabel.ImageTransparency = 1
                     
                     for i = 1, 50, 2 do
@@ -573,7 +573,7 @@ if getserver.StatusCode == 200 and gethwid.StatusCode == 200 then
                     blur:Destroy()
                     ScreenGui:Destroy()
                     
-                    loadstring(game:HttpGet("https://raw.githubusercontent.com/Galiverking/CheckPointWT/main/Check2.lua"))()
+                    loadstring(game:HttpGet("https://raw.githubusercontent.com/WETHUBv1/WetHubv1/main/loading.lua"))()
                     wait(2)
                     print("Scripts") --ใส่สคิปที่จะให้รันตอนมันเช้คอะไรถูก
                 end
@@ -598,5 +598,6 @@ if getserver.StatusCode == 200 and gethwid.StatusCode == 200 then
         print("[Wet-Hub] : Authenticated (2/3)")
         wait(math.random(1, 4))
         ntf("\nCorrect Key")
-        print("[Wet-Hub] : Correct Key (3/3)")
+        print("[WET-Hub] : Correct Key (3/3)")
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/WETHUBv1/WetHubv1/main/loading.lua"))();
 end
