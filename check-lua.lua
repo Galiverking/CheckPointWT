@@ -1,3 +1,4 @@
+
 local ostimec1 = os.time()
 local main = {
 	["1"] = rconsoleprint,
